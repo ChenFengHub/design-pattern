@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:5999/design_pattern_server?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: basic
+    password: starnet@234
+
+#log
+#logging:
+#  level: DEBUG
+
+

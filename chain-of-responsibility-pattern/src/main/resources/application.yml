@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: chain-of-responsibility-server
+  profiles:
+    active: dev
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatemennts: true
+    maxOpenPreparedStatements: 20
+
+#mybatis
+#mybatis:
+#  mapper-locations: classpath:com/starnetsecurity/**/**.xml
+#  type-aliases-package: classpath:com.starnetsecurity.**.entity
+
